@@ -1,57 +1,41 @@
-[![Publish to GitHub Pages](https://github.com/MaastrichtU-IDS/best-practices/workflows/Publish%20to%20GitHub%20Pages/badge.svg)](https://github.com/MaastrichtU-IDS/best-practices/actions?query=workflow%3A%22Publish+to+GitHub+Pages%22)
+# Website
 
-Best practices documentation website for the [Institute of Data Science](https://maastrichtuniversity.nl/ids) at Maastricht University.
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-The documentation website at https://maastrichtu-ids.github.io/best-practices is **automatically updated** by a [GitHub Action](https://github.com/MaastrichtU-IDS/best-practices/actions) when a change is pushed to the `main` branch 🔄
+### Installation
 
-## Contribute 👨‍💻
-
-Contributions are welcome! **See the [guidelines to contribute](https://maastrichtu-ids.github.io/best-practices/contributing)**.
-
-## Edit documentation pages 📝
-
-Editing a documentation file is as easy as going to https://github.com/MaastrichtU-IDS/best-practices/edit/main/website/docs/introduction.md if your account has edit permissions.
-
-Otherwise **fork the repository** and modify the files you want. Pull requests are welcome!
-
-> We recommend using [Typora](https://typora.io/) to edit [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) files on your computer.
-
-## Run for development
-
-If you want to test it locally: to run from the `/website` folder.
-
-```shell
-cd website
-yarn install
-yarn start
+```
+$ yarn
 ```
 
-## Run with Docker
+### Local Development
 
-```shell
-docker-compose up
+```
+$ yarn start
 ```
 
-> Access at http://localhost:3000/
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-## Deploy to GitHub Pages
+### Build
 
-To run in `website/` directory. Make sure the `website/build` directory has been generated before deploying.
-
-```shell
-yarn install
-GIT_USER=MaastrichtU-IDS CURRENT_BRANCH=main USE_SSH=true yarn deploy
+```
+$ yarn build
 ```
 
-## Install Docusaurus boostrap tool
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-```shell
-sudo npm install --global yarn
-sudo npm install --global docusaurus-init
+### Deployment
 
-npx docusaurus-init
+Using SSH:
+
+```
+$ USE_SSH=true yarn deploy
 ```
 
-# Acknowledgments
+Not using SSH:
 
-Documentation website generated using [Docusaurus](https://docusaurus.io/).
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

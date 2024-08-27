@@ -1,9 +1,0 @@
-{
-  "docs": {
-    "Project Management": ["introduction", "project-administration", "fair-data"],
-    "Research Development": ["development-environment",  
-      "code-management",  "publishing-code", "repository-administration", "continuous-integration", 
-      "documentation", "using-ontologies"],
-    "IDS Resources": [ "ids-projects", "ids-services", "workshops", "publish-data" ]
-  }
-}
