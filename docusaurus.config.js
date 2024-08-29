@@ -76,6 +76,7 @@ const config = {
         sidebar: {
         hideable: true,
       },
+      },
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Sustavis Policies',
