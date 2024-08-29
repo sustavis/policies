@@ -39,11 +39,8 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebar: {
-            hideable: true,
-            sidebarPath: './sidebars.js',
-          },  
+        docs:
+          sidebarPath: './sidebars.js',  
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
