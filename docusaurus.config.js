@@ -39,8 +39,8 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs:
-          sidebarPath: './sidebars.js',  
+        docs: {
+          sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -68,7 +68,7 @@ const config = {
     ],
   ],
 
-  themeConfig:  
+  themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
