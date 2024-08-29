@@ -1,1 +1,1 @@
-[![Publish to GitHub Pages](https://github.com/sustavis/policies/workflows/Publish%20to%20GitHub%20Pages/badge.svg)](https://github.com/sustavis/policies/actions?query=workflow%3A%22Publish+to+GitHub+Pages%22)
+[![Publish to GitHub Pages](https://github.com/sustavis/policies/workflows/Publish-to-GitHub-Pages/badge.svg)](https://github.com/sustavis/policies/actions?query=workflow-Publish-to-GitHub-Pages)
