@@ -79,7 +79,7 @@ const config = {
       },
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Sustavis Policies',
+        title: 'Sustavis',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -87,11 +87,15 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'DatapoliciesSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Policies',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            to: 'docs/imprint',
+            label: 'Imprint',
+            position: 'left',
+          },
           {
             href: 'https://github.com/sustavis/policies',
             label: 'GitHub',
@@ -106,9 +110,21 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Code of Conduct',
+                to: '/docs/code-of-conduct',
               },
+              {
+                label: 'Fair Principles',
+                to: '/docs/data-policies/fair-data',
+              },
+              {
+                label: 'Data Protection',
+                to: '/docs/data-policies/data-protection'
+              },
+              {
+                label: 'Imprint',
+                to: '/docs/imprint',
+              }
             ],
           },
           {
@@ -123,10 +139,6 @@ const config = {
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/sustavis/policies',
